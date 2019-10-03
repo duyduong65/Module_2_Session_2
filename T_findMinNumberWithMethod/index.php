@@ -25,11 +25,23 @@ class Number
         }
         return $min;
     }
+
+    public function getMaxNumber()
+    {
+        $max = $this->arr[0];
+        foreach ($this->arr as $number) {
+            if ($max < $number) {
+                $max = $number;
+            }
+        }
+        return $max;
+    }
 }
 
 ;
 
 $objNumber = new Number($arrNumber);
-echo $objNumber->getMinNumber();
+echo $objNumber->getMinNumber()."<br>";
+echo $objNumber->getMaxNumber();
 
 ?>
