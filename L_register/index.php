@@ -17,8 +17,9 @@
     phone number: <input type="text" name="phone">
     <span style="color: red">*<?php echo $phoneErr; ?></span><br>
     <input type="submit" value="submit">
-
 </form>
-
+<?php
+$registrations = loadRegistration('data.json');
+?>
 </body>
 </html>
