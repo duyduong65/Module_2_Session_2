@@ -1,5 +1,5 @@
 <?php
-
+echo "hello world";
 $name = $email = $phone = NULL;
 $nameErr = $emailErr = $phoneErr = NULL;
 $has_error = false;
